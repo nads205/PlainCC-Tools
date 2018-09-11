@@ -17,8 +17,6 @@ namespace Examples
             //var paypalApi = new PaypalAPI();
             //paypalApi.GetPaymentList();
 
-
-
             SetConsoleUp();
             NameValueCollection appSettings = ConfigurationManager.AppSettings;
             Paypal paypal = new Paypal();

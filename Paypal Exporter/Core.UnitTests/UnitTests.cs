@@ -16,16 +16,7 @@ namespace Examples.Unit_Tests
             else
                 return RecordAction.Master;
         }
-        
-        [Test]
-        public void LoadPaypalFile()
-        {
-            MasterDetailEngine engine = new MasterDetailEngine(typeof(PaypalRecord), typeof(PaypalRecord), new MasterDetailSelector(PaypalSelector));
-            
-            string PaypalFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "../../../Data/PaypalMasterChild.csv");
-            Path.Combine(Directory.GetCurrentDirectory(), PaypalFilePath);
-            MasterDetails[] res = (MasterDetails[])engine.ReadFile(PaypalFilePath); 
-        }
+          
     }
 
     [TestFixture]
@@ -164,22 +155,6 @@ namespace Examples.Unit_Tests
     }
 
     [TestFixture]
-    public class ShipmentGenerationTests
-    {
-        [Test]
-        public void GenerateShipmentString()
-        {
-            string t = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "../../../Core.UnitTests/Data/Shipments.txt");
-            string target = File.ReadAllText(t);
-            MasterDetailEngine engine = new MasterDetailEngine(typeof(PaypalRecord), typeof(PaypalRecord), new MasterDetailSelector(Process.PaypalSelectorClass.PaypalSelector));
-            string PaypalFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "../../../Core.UnitTests/Data/Paypal_InvoiceSingleItem.csv");
-            MasterDetails[] recordsMS = (MasterDetails[])engine.ReadFile(PaypalFilePath);
-            var shipment = Process.CreateShipmentString(recordsMS[0], 1);
-            Assert.That(shipment, Is.EqualTo(target));
-        }
-    }
-
-    [TestFixture]
     public class CommentGenerationTests
     {
         [Test]
@@ -242,7 +217,8 @@ namespace Examples.Unit_Tests
         {
             string t = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "../../../Core.UnitTests/Data/Payment.txt");
             string target = File.ReadAllText(t);
-            string PaypalFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "../../../Core.UnitTests/Data/Paypal_ShippingTest.csv");
+            string PaypalFilePath = Path.Combine(System.AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\Core.UnitTests\\Data\\Paypal_ShippingTest.csv");
+            Assert.That(File.Exists(PaypalFilePath), "Paypal test file does not exist in directory");
             FileHelperEngine<PaypalRecord> paypalEngine = new FileHelperEngine<PaypalRecord>();
             PaypalRecord[] records = paypalEngine.ReadFile(PaypalFilePath);
             var paymentstring = Process.CreatePaymentString(records[0],1);

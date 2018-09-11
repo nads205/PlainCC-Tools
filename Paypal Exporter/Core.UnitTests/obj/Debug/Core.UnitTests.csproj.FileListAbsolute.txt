@@ -5,7 +5,6 @@ C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Export
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\nunit.engine.dll
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\nunit.engine.api.dll
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\Mono.Cecil.dll
-C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\packages\AutoMapper.3.3.1\lib\net40\AutoMapper.Net4.dll
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\Tests.dll.config
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\Tests.dll
 C:\Users\naadi\Documents\Visual Studio 2015\Projects\PlainCC-Tools\Paypal Exporter\Core.UnitTests\bin\Debug\Tests.pdb
