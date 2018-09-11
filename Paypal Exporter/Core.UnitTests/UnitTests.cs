@@ -226,46 +226,7 @@ namespace Examples.Unit_Tests
         }
     }
     [TestFixture]
-    //public class ProductGenerationTests
-    //{
-    //    [Test]
-    //    public void TestSingleProductGenerator()
-    //    {
-    //        string t = "../../../Core.UnitTests/Data/Target_OneItem.txt";
-    //        string target = File.ReadAllText(t);
-    //        string PaypalFilePath = "../../../Core.UnitTests/Data/Paypal_OneItem.csv";
-    //        FileHelperEngine<PaypalRecord> paypalEngine = new FileHelperEngine<PaypalRecord>();
-    //        PaypalRecord[] records = paypalEngine.ReadFile(PaypalFilePath);
-    //        var productstring = Process.CreateProductsString(records, 1);
-    //        Assert.That(productstring, Is.EqualTo(target));
-    //    }
-    //    [Test]
-    //    public void TestTwoProductGenerator()
-    //    {
-    //        string t = "../../../Core.UnitTests/Data/Target_TwoItems.txt";
-    //        string target = File.ReadAllText(t);
-    //        string PaypalFilePath = "../../../Core.UnitTests/Data/Paypal_TwoItems.csv";
-    //        FileHelperEngine<PaypalRecord> paypalEngine = new FileHelperEngine<PaypalRecord>();
-    //        PaypalRecord[] records = paypalEngine.ReadFile(PaypalFilePath);
-    //        var productstring = Process.CreateProductsString(records[0], 1);
-    //        Assert.That(productstring, Is.EqualTo(target));
-    //    }
-    //    [Test]
-    //    public void TestMultipleProductGenerator()
-    //    {
-    //        string t = "../../../Core.UnitTests/Data/Target_MultipleItems.txt";
-    //        string target = File.ReadAllText(t);
-    //        string PaypalFilePath = "../../../Core.UnitTests/Data/Paypal_MultipleItems.csv";
-    //        FileHelperEngine<PaypalRecord> paypalEngine = new FileHelperEngine<PaypalRecord>();
-    //        PaypalRecord[] records = paypalEngine.ReadFile(PaypalFilePath);
-    //        StringBuilder productstring = new StringBuilder();
-    //        for (int x = 0; x < records.Length; )
-    //        {
-    //            productstring.Append(Process.CreateProductsString(records[x], ++x));
-    //        }
-    //        Assert.That(productstring.ToString(), Is.EqualTo(target));
-    //    }
-    //}
+  
     [TestFixture]
     public class TestItemDescriptionParsing
     {
