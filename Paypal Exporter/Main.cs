@@ -20,15 +20,15 @@ namespace Examples
             SetConsoleUp();
             NameValueCollection appSettings = ConfigurationManager.AppSettings;
             Paypal paypal = new Paypal();
-            MasterDetails[] recordsMS = paypal.LoadPaypalFile(appSettings["PaypalFilePath"]);
+            MasterDetails[] recordsMs = paypal.LoadPaypalFile(appSettings["PaypalFilePath"]);
             Core.Generator generator = new Generator();
-            var mList = generator.Generate(appSettings, recordsMS);
+            var mList = generator.Generate(appSettings, recordsMs);
             if (mList != null && mList.Count > 0)
             {
                 Magento magento = new Magento();
                 magento.SaveMagentoFile(appSettings["MagentoFilePath"], appSettings["HeaderRow"], mList);
                 Console.WriteLine(Process.Summary.ToString());
-                Console.WriteLine("{0} records generated", mList.Count);
+                Console.WriteLine("{0} records generated into new file {}", mList.Count, appSettings["MagentoFilePath"]);
             }
             else
             {   //todo output summary?

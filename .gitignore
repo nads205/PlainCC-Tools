@@ -24,3 +24,5 @@ obj/
 [Dd]ebug*/
 [Rr]elease*/
 Ankh.NoLoad
+/Paypal Exporter/.vs/Paypal Data Import Export/v15/Server/sqlite3
+/Paypal Exporter/packages
