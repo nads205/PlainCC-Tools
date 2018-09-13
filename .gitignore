@@ -26,3 +26,5 @@ obj/
 Ankh.NoLoad
 /Paypal Exporter/.vs/Paypal Data Import Export/v15/Server/sqlite3
 /Paypal Exporter/packages
+*.dll
+*.dll

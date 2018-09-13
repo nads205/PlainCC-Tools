@@ -35,6 +35,7 @@ namespace Examples.Core.DataStructures
 
     public abstract class iFileHelpersClass
     {
+        //can't remember why this abstract class is needed - I think It might be related to the FileHelpers library
     }
 
     //------------------------
