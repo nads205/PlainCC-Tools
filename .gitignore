@@ -28,3 +28,6 @@ Ankh.NoLoad
 /Paypal Exporter/packages
 *.dll
 *.dll
+
+# Visual Studio temp something
+.vs/
