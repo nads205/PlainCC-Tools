@@ -28,7 +28,7 @@ namespace Examples
                 Magento magento = new Magento();
                 magento.SaveMagentoFile(appSettings["MagentoFilePath"], appSettings["HeaderRow"], mList);
                 Console.WriteLine(Process.Summary.ToString());
-                Console.WriteLine("{0} records generated into new file {}", mList.Count, appSettings["MagentoFilePath"]);
+                Console.WriteLine("{0} records generated into new file {1}", mList.Count, appSettings["MagentoFilePath"]);
             }
             else
             {   //todo output summary?
