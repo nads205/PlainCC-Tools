@@ -48,9 +48,15 @@
       <HintPath>..\packages\FileHelpers.2.0.0.0\lib\Interop.Office.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
       <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
       <Private>True</Private>
+    </Reference>
+    <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -78,6 +84,9 @@
     <Content Include="Data\Target_TwoItems.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\Paypal.API\App.config">
+      <Link>App.config</Link>
+    </None>
     <None Include="Data\Paypal_InvoiceSingleItem.csv" />
     <None Include="Data\Paypal_MultipleItems.csv" />
     <None Include="Data\Paypal_OneItem.csv" />
@@ -85,8 +94,13 @@
     <None Include="Data\Paypal_TwoItems.csv" />
     <None Include="Data\ScottBelasovitch\Paypal_MultipleItems.csv" />
     <None Include="packages.config" />
+    <Compile Include="Paypal.API.Tests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Paypal.API\Paypal.API.csproj">
+      <Project>{97416ed2-e196-4e25-993a-afcfcc0d560f}</Project>
+      <Name>Paypal.API</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Paypal.Exporter.csproj">
       <Project>{7f3d8b9d-0187-4264-ab26-57523a9c38ce}</Project>
       <Name>Empty Project CS</Name>

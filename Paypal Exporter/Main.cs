@@ -14,8 +14,8 @@ namespace Examples
         static void Main()
         {
             //#warning  Paypal API not yet working
-            //var paypalApi = new PaypalAPI();
-            //paypalApi.GetPaymentList();
+            var paypalApi = new PaypalAPI();
+            paypalApi.GetPaymentList();
 
             SetConsoleUp();
             NameValueCollection appSettings = ConfigurationManager.AppSettings;

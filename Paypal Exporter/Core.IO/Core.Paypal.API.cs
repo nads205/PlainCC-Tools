@@ -11,7 +11,6 @@ namespace Examples.Core.IO
         string accessToken; 
         APIContext apiContext;
 
-
         public PaypalAPI()
         {
             // Authenticate with PayPal
